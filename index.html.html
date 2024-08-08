@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviflor</title>
+    <!-- Enlace a Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* CSS Global */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #95f2f7;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            color: #000000;
+            text-align: center;
+            padding: 20px;
+            background-color: #ffffff;
+            border-bottom: 2px solid #ccc;
+        }
+
+        nav {
+            background-color: #0066cc;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            padding: 15px 20px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #004999;
+            border-radius: 5px;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #C6EDFF;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: #95f2f7;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        img {
+            max-width: 50%;
+            height: auto;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+
+        /* Clases */
+        .descripcion {
+            color: #292931;
+            font-size: 30px;
+            font-weight: bold;
+            text-align: left;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+        }
+
+        .servicios {
+            font-size: 18px;
+            font-family: 'Courier New', Courier, monospace;
+            line-height: 1.6;
+        }
+
+        /* Agrupación de selectores */
+        #sabias-que, #informacion {
+            color: #292931;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        #link {
+            font-size: 15px;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            text-align: center;
+        }
+
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Lista con selectores descendientes */
+        .servicios li {
+            list-style-type: square;
+            margin: 5px 0;
+        }
+
+        /* Pseudo-clases para mejorar la apariencia */
+        .servicios li:hover {
+            color: #0066cc;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Serviflor</h1>
+    </header>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">Serviflor</a>
+            <div class="collapse navbar-collapse">
+                <div class="navbar-nav">
+                    <a class="nav-link" href="#descripcion">Descripción</a>
+                    <a class="nav-link" href="#servicios">Servicios</a>
+                    <a class="nav-link" href="#eventos">Eventos</a>
+                    <a class="nav-link" href="#contacto">Contacto</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="container mt-4">
+        <h2 id="descripcion" class="descripcion">Descripción</h2>
+        <p>Las flores son el lenguaje universal del cariño. Al regalarlas, expresamos emociones que a veces nos cuesta poner en palabras. Y por eso floristería Serviflor está para ayudarte.</p>
+        <h2 id="servicios">Servicios</h2>
+        <ul class="servicios">
+            <li>Diseños de Arreglos para toda ocasión</li>
+            <li>Desayunos y Anchetas</li>
+            <li>Domicilios en Medellín</li>
+            <li>Diferentes métodos de pago</li>
+        </ul>
+        <img src="https://storage.googleapis.com/feisty-dolphin-150602.appspot.com/fotos/174/1.75.webp" alt="Arreglo Floral" class="img-fluid">
+        <p id="sabias-que">Sabías que...</p>
+        <p id="informacion">La rosa es la flor más regalada en todo el mundo. Las siguen muy cerca los tulipanes, las gerberas, los claveles, los lirios y los girasoles. Si quieres regalar las flores más bellas de Medellín, te invitamos a deleitarte con todos nuestros diseños en arreglos.</p>
+        <h2 id="eventos">Eventos para Regalar Flores</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Eventos</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Cumpleaños</td>
+                </tr>
+                <tr>
+                    <td>Aniversarios</td>
+                </tr>
+                <tr>
+                    <td>Ocasiones románticas</td>
+                </tr>
+                <tr>
+                    <td>Matrimonios</td>
+                </tr>
+                <tr>
+                    <td>Amor y amistad</td>
+                </tr>
+            </tbody>
+        </table>
+        <p id="link">
+            <a href="https://floristeriaserviflor.com/">Entra a nuestra página web de arreglos florales dando click al texto</a>
+        </p>
+        <h2>Más Información</h2>
+        <p>Visita nuestra <a href="#servicios">sección de servicios</a> para más detalles.</p>
+    </section>
+    <footer id="contacto">
+        <p>Sara Pulido Berrío<br>
+            Contacto: 320 6697727<br>
+            Instagram: <a href="https://www.instagram.com/floristeria_en_medellín" target="_blank">floristeria_en_medellín</a><br>
+        </p>
+    </footer>
+    <!-- Enlace a Bootstrap JS y dependencias -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
